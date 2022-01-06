@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/athman/Documents/chatbots/comrade/./models/nlu/default/comrade/component_5_EmbeddingIntentClassifier.ckpt"
+all_model_checkpoint_paths: "/home/athman/Documents/chatbots/comrade/./models/nlu/default/comrade/component_5_EmbeddingIntentClassifier.ckpt"
