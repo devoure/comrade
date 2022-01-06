@@ -1,0 +1,485 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "Hello",
+        "intent": "greeting",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "Hello",
+            "entity": "greeting"
+          }
+        ]
+      },
+      {
+        "text": "Niaje",
+        "intent": "greeting",
+        "entities": []
+      },
+      {
+        "text": "Hi",
+        "intent": "greeting",
+        "entities": []
+      },
+      {
+        "text": "I want to know my exam results",
+        "intent": "get_results",
+        "entities": [
+          {
+            "start": 22,
+            "end": 30,
+            "value": " results",
+            "entity": "subject_request"
+          },
+          {
+            "start": 22,
+            "end": 30,
+            "value": " exam",
+            "entity": "subject_request"
+          },
+          {
+            "start": 22,
+            "end": 30,
+            "value": " know",
+            "entity": "verb_request"
+          },
+          {
+            "start": 22,
+            "end": 30,
+            "value": " I",
+            "entity": "possesive_request"
+          },
+          {
+            "start": 0,
+            "end": 9,
+            "value": "I want to",
+            "entity": "request"
+          }
+        ]
+      },
+      {
+        "text": "Can I get my exam results",
+        "intent": "get_results",
+        "entities": [
+          {
+            "start": 5,
+            "end": 10,
+            "value": " get ",
+            "entity": "verb_request"
+          },
+          {
+            "start": 9,
+            "end": 12,
+            "value": " my",
+            "entity": "possesive_request"
+          },
+          {
+            "start": 13,
+            "end": 25,
+            "value": "exam results",
+            "entity": "subject_request"
+          },
+          {
+            "start": 0,
+            "end": 5,
+            "value": "Can I",
+            "entity": "request"
+          }
+        ]
+      },
+      {
+        "text": "Please enroll me",
+        "intent": "enrollment",
+        "entities": [
+          {
+            "start": 7,
+            "end": 16,
+            "value": "enroll me",
+            "entity": "subject_request"
+          },
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Please",
+            "entity": "request"
+          }
+        ]
+      },
+      {
+        "text": "I want to know my fee balance",
+        "intent": "get_fee",
+        "entities": [
+          {
+            "start": 10,
+            "end": 14,
+            "value": "know",
+            "entity": "verb_request"
+          },
+          {
+            "start": 15,
+            "end": 17,
+            "value": "my",
+            "entity": "possesive_request"
+          },
+          {
+            "start": 18,
+            "end": 29,
+            "value": "fee balance",
+            "entity": "subject_request"
+          },
+          {
+            "start": 0,
+            "end": 9,
+            "value": "I want to",
+            "entity": "request"
+          }
+        ]
+      },
+      {
+        "text": "Can I get my fee balance",
+        "intent": "get_fee",
+        "entities": [
+          {
+            "start": 6,
+            "end": 9,
+            "value": "get",
+            "entity": "verb_request"
+          },
+          {
+            "start": 9,
+            "end": 12,
+            "value": " my",
+            "entity": "possesive_request"
+          },
+          {
+            "start": 13,
+            "end": 24,
+            "value": "fee balance",
+            "entity": "subject_request"
+          },
+          {
+            "start": 0,
+            "end": 5,
+            "value": "Can I",
+            "entity": "request"
+          }
+        ]
+      },
+      {
+        "text": "Rada",
+        "intent": "greeting",
+        "entities": []
+      },
+      {
+        "text": "How are you",
+        "intent": "greeting",
+        "entities": [
+          {
+            "start": 7,
+            "end": 11,
+            "value": " you",
+            "entity": "bot_address"
+          }
+        ]
+      },
+      {
+        "text": "what are my exam results",
+        "intent": "get_results",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "what are ",
+            "entity": "verb_request"
+          },
+          {
+            "start": 9,
+            "end": 11,
+            "value": "my",
+            "entity": "possesive_request"
+          },
+          {
+            "start": 12,
+            "end": 24,
+            "value": "exam results",
+            "entity": "subject_request"
+          }
+        ]
+      },
+      {
+        "text": "Can you show me my exam results",
+        "intent": "get_results",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "Can",
+            "entity": "request"
+          },
+          {
+            "start": 4,
+            "end": 8,
+            "value": "you ",
+            "entity": "bot_address"
+          },
+          {
+            "start": 8,
+            "end": 16,
+            "value": "show me ",
+            "entity": "verb_request"
+          },
+          {
+            "start": 16,
+            "end": 19,
+            "value": "my ",
+            "entity": "possesive_request"
+          },
+          {
+            "start": 19,
+            "end": 31,
+            "value": "exam results",
+            "entity": "subject_request"
+          }
+        ]
+      },
+      {
+        "text": "What is my current fee balance",
+        "intent": "get_fee",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "What is ",
+            "entity": "verb_request"
+          },
+          {
+            "start": 8,
+            "end": 10,
+            "value": "my",
+            "entity": "bot_address"
+          },
+          {
+            "start": 19,
+            "end": 30,
+            "value": "fee balance",
+            "entity": "subject_request"
+          },
+          {
+            "start": 10,
+            "end": 19,
+            "value": " current ",
+            "entity": "time"
+          }
+        ]
+      },
+      {
+        "text": "Enrol me to the current semester",
+        "intent": "enrollment",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "Enrol",
+            "entity": "verb_request"
+          },
+          {
+            "start": 6,
+            "end": 8,
+            "value": "me",
+            "entity": "possesive_request"
+          },
+          {
+            "start": 16,
+            "end": 23,
+            "value": "current",
+            "entity": "time"
+          },
+          {
+            "start": 24,
+            "end": 32,
+            "value": "semester",
+            "entity": "subject_request"
+          }
+        ]
+      },
+      {
+        "text": "I want to enrol to the the  new semester",
+        "intent": "enrollment",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "I want to ",
+            "entity": "request"
+          },
+          {
+            "start": 10,
+            "end": 23,
+            "value": "enrol to the ",
+            "entity": "verb_request"
+          },
+          {
+            "start": 32,
+            "end": 40,
+            "value": "semester",
+            "entity": "subject_request"
+          },
+          {
+            "start": 28,
+            "end": 32,
+            "value": "new ",
+            "entity": "time"
+          }
+        ]
+      },
+      {
+        "text": "What is my current enrolment status",
+        "intent": "get_enrollmentStatus",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "What is",
+            "entity": "request"
+          },
+          {
+            "start": 8,
+            "end": 11,
+            "value": "my ",
+            "entity": "possesive_request"
+          },
+          {
+            "start": 11,
+            "end": 18,
+            "value": "current",
+            "entity": "time"
+          },
+          {
+            "start": 19,
+            "end": 35,
+            "value": "enrolment status",
+            "entity": "subject_request"
+          }
+        ]
+      },
+      {
+        "text": "Am i enrolled in the current semester",
+        "intent": "get_enrollmentStatus",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "Am i ",
+            "entity": "request"
+          },
+          {
+            "start": 5,
+            "end": 21,
+            "value": "enrolled in the ",
+            "entity": "verb_request"
+          },
+          {
+            "start": 29,
+            "end": 37,
+            "value": "semester",
+            "entity": "subject_request"
+          },
+          {
+            "start": 21,
+            "end": 28,
+            "value": "current",
+            "entity": "time"
+          }
+        ]
+      },
+      {
+        "text": "Have I enrolled for the current semester",
+        "intent": "get_enrollmentStatus",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Have I ",
+            "entity": "request"
+          },
+          {
+            "start": 6,
+            "end": 23,
+            "value": " enrolled for the",
+            "entity": "verb_request"
+          },
+          {
+            "start": 31,
+            "end": 40,
+            "value": " semester",
+            "entity": "subject_request"
+          },
+          {
+            "start": 23,
+            "end": 32,
+            "value": " current ",
+            "entity": "time"
+          }
+        ]
+      },
+      {
+        "text": "What is my enrolment status ",
+        "intent": "get_enrollmentStatus",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "What is",
+            "entity": "request"
+          },
+          {
+            "start": 8,
+            "end": 11,
+            "value": "my ",
+            "entity": "possesive_request"
+          },
+          {
+            "start": 11,
+            "end": 28,
+            "value": "enrolment status ",
+            "entity": "subject_request"
+          }
+        ]
+      },
+      {
+        "text": "I want to enrol for the new semester",
+        "intent": "enrollment",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "I want to",
+            "entity": "request"
+          },
+          {
+            "start": 10,
+            "end": 24,
+            "value": "enrol for the ",
+            "entity": "verb_request"
+          },
+          {
+            "start": 23,
+            "end": 27,
+            "value": " new",
+            "entity": "time"
+          },
+          {
+            "start": 28,
+            "end": 36,
+            "value": "semester",
+            "entity": "subject_request"
+          }
+        ]
+      }
+    ],
+    "regex_features": [],
+    "entity_synonyms": []
+  }
+}
