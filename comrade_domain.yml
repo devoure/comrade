@@ -1,0 +1,52 @@
+slots:
+  username:
+    type:text
+  reg_number:
+    type:float
+  secretkey:
+    type:text
+
+intents:
+  - greeting
+  - enrollment
+  - get_enrollmentStatus
+  - get_fee
+  - get_results
+
+entities:
+  - verb_request
+  - possesive_request
+  - subject_request
+  - request
+  - time
+  - bot_address
+  - greeting
+
+templates:
+  utter_greet:
+    - 'Hey, welcome to the student assistant chatbot, my name is Comrade'
+  utter_ask_name:
+    - 'What is your name?'
+  utter_ask_reg:
+    - 'What is your registration number?'
+  utter_ask_key:
+    - 'Lastly, what is your secret key?'
+  utter_bad_year:
+    - 'Sorry about thatm you will turn it around am sure'
+  utter_good_year:
+    - 'Excellent news, keep it up'
+  utter_more_help:
+    - 'Would you want any further assistant?'
+  utter_ask_request:
+    - 'What can I assist you with?'
+
+actions:
+  - utter_greet
+  - utter_ask_name
+  - utter_ask_reg
+  - utter_ask_key
+  - utter_ask_request
+
+
+
+
