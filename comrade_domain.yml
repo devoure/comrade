@@ -46,6 +46,10 @@ actions:
   - utter_ask_reg
   - utter_ask_key
   - utter_ask_request
+  - authenticate_user
+  - get_student_fee
+  - get_exam_results
+  - get_enrol
 
 
 
