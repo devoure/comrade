@@ -14,5 +14,5 @@ def predict_intent(text):
     print(interpreter.parse(text))
 
 train_comrade('./data/data.json', 'config.json', './models/nlu')
-predict_intent("Niaje , whats my fee balance for this semester")
+predict_intent("My registration number is 0225")
 

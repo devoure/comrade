@@ -477,6 +477,78 @@
             "entity": "subject_request"
           }
         ]
+      },
+      {
+        "text": "My registration number is 0225",
+        "intent": "get_reg",
+        "entities": [
+          {
+            "start": 0,
+            "end": 25,
+            "value": "My registration number is",
+            "entity": "request"
+          },
+          {
+            "start": 26,
+            "end": 30,
+            "value": "0225",
+            "entity": "reg_number"
+          }
+        ]
+      },
+      {
+        "text": "My secret key is apple",
+        "intent": "get_secret",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "My secret key is",
+            "entity": "request"
+          },
+          {
+            "start": 17,
+            "end": 22,
+            "value": "apple",
+            "entity": "secretkey"
+          }
+        ]
+      },
+      {
+        "text": "This semester has been good",
+        "intent": "get_mood",
+        "entities": [
+          {
+            "start": 0,
+            "end": 22,
+            "value": "This semester has been",
+            "entity": "request"
+          },
+          {
+            "start": 23,
+            "end": 27,
+            "value": "good",
+            "entity": "mood"
+          }
+        ]
+      },
+      {
+        "text": "The semester has been bad",
+        "intent": "get_mood",
+        "entities": [
+          {
+            "start": 0,
+            "end": 22,
+            "value": "The semester has been ",
+            "entity": "request"
+          },
+          {
+            "start": 22,
+            "end": 25,
+            "value": "bad",
+            "entity": "mood"
+          }
+        ]
       }
     ],
     "regex_features": [],

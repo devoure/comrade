@@ -149,6 +149,21 @@ class GetEnrol(Action):
             response = "An {} occured, try again".format(api_message)
         return [SlotSet("api_status", api_status)]
 
+class GetMood(Action):
+    def name(self):
+        return "get_mood"
+    def run(self, dispatcher, tracker, domain):
+        #get slots
+        user_mood = tracker.get_slot('mood')
+
+        if user_mood == 'bad':
+            response = "Thats tough kiddo, you will beat that I guess"
+        elif user_mood == 'good':
+            response = "Thats excellent. keep it up"
+        else:
+            response = "Could'nt get that, too bad hope you are alright though"
+
+        return []
 #class SetEnrol(Action):
 #    def name(self):
 #        return "set_enrol"

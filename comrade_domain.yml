@@ -2,7 +2,7 @@ slots:
   username:
     type:text
   reg_number:
-    type:float
+    type:text
   secretkey:
     type:text
 
@@ -12,6 +12,9 @@ intents:
   - get_enrollmentStatus
   - get_fee
   - get_results
+  - get_reg
+  - get_secret
+  - get_mood
 
 entities:
   - verb_request
@@ -21,6 +24,9 @@ entities:
   - time
   - bot_address
   - greeting
+  - mood
+  - reg_number
+  - secretkey
 
 templates:
   utter_greet:
@@ -32,13 +38,15 @@ templates:
   utter_ask_key:
     - 'Lastly, what is your secret key?'
   utter_bad_year:
-    - 'Sorry about thatm you will turn it around am sure'
+    - 'Sorry about that you will turn it around am sure'
   utter_good_year:
     - 'Excellent news, keep it up'
   utter_more_help:
     - 'Would you want any further assistant?'
   utter_ask_request:
     - 'What can I assist you with?'
+  utter_thanks:
+    - 'Hope that was helpful, thanks for using this service'
 
 actions:
   - utter_greet
@@ -46,10 +54,15 @@ actions:
   - utter_ask_reg
   - utter_ask_key
   - utter_ask_request
+  - utter_bad_year
+  - utter_good_year
+  - utter_more_help
+  - utter_ask_request
   - authenticate_user
   - get_student_fee
   - get_exam_results
   - get_enrol
+  - utter_thanks
 
 
 
